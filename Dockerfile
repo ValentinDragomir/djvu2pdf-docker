@@ -36,7 +36,7 @@ RUN gem install iconv pdfbeads
 RUN find / -name 'pdfpage.rb' -exec \
   sed -i \
   -e "s/'JP2','numrlvls',4/'JP2','numrlvls',4/" \
-  -e "s/'JP2','rate',0.015625/'JP2','rate',256/" \
+  -e "s/'JP2','rate',0.015625/'JP2','rate',64/" \
   {} \;
 # -->
 
